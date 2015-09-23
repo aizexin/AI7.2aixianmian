@@ -31,7 +31,7 @@
         //<4>将请求的数据反馈给视图控制器
         if([self.delegate respondsToSelector:@selector(sendMessage:andPath:)])
         {
-            [self.delegate sendMessage:responseObject andPath:self.path];
+            [self.delegate requestSendMessage:responseObject andPath:self.path];
         }
         else
         {

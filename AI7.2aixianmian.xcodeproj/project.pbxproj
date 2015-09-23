@@ -53,6 +53,8 @@
 		BCBB0AB01BB2D2C2004492D5 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB0A9D1BB2D2C2004492D5 /* UIProgressView+AFNetworking.m */; };
 		BCBB0AB11BB2D2C2004492D5 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB0A9F1BB2D2C2004492D5 /* UIRefreshControl+AFNetworking.m */; };
 		BCBB0AB21BB2D2C2004492D5 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB0AA11BB2D2C2004492D5 /* UIWebView+AFNetworking.m */; };
+		BCE134331BB2D75C00A47439 /* AIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE134321BB2D75C00A47439 /* AIBaseTableViewCell.m */; };
+		BCE134361BB2D77000A47439 /* AIStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE134351BB2D77000A47439 /* AIStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +159,10 @@
 		BCBB0A9F1BB2D2C2004492D5 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		BCBB0AA01BB2D2C2004492D5 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		BCBB0AA11BB2D2C2004492D5 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		BCE134311BB2D75C00A47439 /* AIBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBaseTableViewCell.h; sourceTree = "<group>"; };
+		BCE134321BB2D75C00A47439 /* AIBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBaseTableViewCell.m; sourceTree = "<group>"; };
+		BCE134341BB2D77000A47439 /* AIStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStarView.h; sourceTree = "<group>"; };
+		BCE134351BB2D77000A47439 /* AIStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIStarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,10 +508,10 @@
 		BCBB0A5B1BB2D0A5004492D5 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BCE134301BB2D74D00A47439 /* View */,
 				BCBB0A5C1BB2D0A5004492D5 /* Controller */,
 				BCBB0A5D1BB2D0A5004492D5 /* Model */,
 				BCBB0A5E1BB2D0A5004492D5 /* Other */,
-				BCBB0A5F1BB2D0A5004492D5 /* VIew */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -535,13 +541,6 @@
 			children = (
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		BCBB0A5F1BB2D0A5004492D5 /* VIew */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VIew;
 			sourceTree = "<group>";
 		};
 		BCBB0A7B1BB2D2C2004492D5 /* AFNetworking */ = {
@@ -601,6 +600,17 @@
 				BCBB0AA11BB2D2C2004492D5 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		BCE134301BB2D74D00A47439 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCE134341BB2D77000A47439 /* AIStarView.h */,
+				BCE134351BB2D77000A47439 /* AIStarView.m */,
+				BCE134311BB2D75C00A47439 /* AIBaseTableViewCell.h */,
+				BCE134321BB2D75C00A47439 /* AIBaseTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -705,6 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE134331BB2D75C00A47439 /* AIBaseTableViewCell.m in Sources */,
 				BCBB0AA71BB2D2C2004492D5 /* AFURLConnectionOperation.m in Sources */,
 				BCBB0A531BB2CF02004492D5 /* MMProgressHUD.m in Sources */,
 				BCBB07651BB28251004492D5 /* ViewController.m in Sources */,
@@ -740,6 +751,7 @@
 				BCBB0AB01BB2D2C2004492D5 /* UIProgressView+AFNetworking.m in Sources */,
 				BCBB0A6E1BB2D1FC004492D5 /* AITopicViewController.m in Sources */,
 				BCBB0A501BB2CF02004492D5 /* MMLinearProgressView.m in Sources */,
+				BCE134361BB2D77000A47439 /* AIStarView.m in Sources */,
 				BCBB07621BB28251004492D5 /* AppDelegate.m in Sources */,
 				BCBB075F1BB28251004492D5 /* main.m in Sources */,
 				BCBB0A571BB2CF02004492D5 /* MMRadialProgressView.m in Sources */,
